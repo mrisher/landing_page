@@ -1,6 +1,6 @@
 ---
 title: Common Datasets
-draft: true
+draft: false
 description: Ready snapshots of some standard datasets which you can easily import into Qdrant.
 keywords:
   - embeddings
