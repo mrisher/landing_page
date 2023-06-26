@@ -1,5 +1,5 @@
 ---
-title: Community links
+title: Community Links
 weight: 31
 ---
 

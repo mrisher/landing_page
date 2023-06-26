@@ -13,7 +13,7 @@ Once you download a snapshot, you need to restore it using the Qdrant CLI upon s
 
 > **Note:** Qdrant documentation describes the process of [recovering a snapshot](/documentation/concepts/snapshots/#restore-snapshot) from a .tar archive.
 
-## Arxiv Datasets
+## Arxiv.org Sample Text Data
 
 Our snapshots are generated from publicly available datasets, which are often used for commercial or academic purposes. [Arxiv.org](https://arxiv.org) is a highly-regarded open-access repository of electronic preprints in multiple fields. Operated by Cornell University, arXiv allows researchers to share their findings with the scientific community 
 and receive feedback before they undergo peer review for formal publication. Its archives 
@@ -26,7 +26,7 @@ Arxiv.org snapshots were created using precomputed embeddings exposed by
 [the Alexandria Index](https://alex.macrocosm.so/download).
 
 
-## Datasets - Article Titles 
+## Journal Article Titles 
 
 This dataset contains embeddings generated from the paper titles only. Each vector has a
 payload with the title used to create it, along with the DOI (Digital Object Identifier).
@@ -63,7 +63,7 @@ payload with the title used to create it, along with the DOI (Digital Object Ide
    </tbody>
 </table>
 
-## Dataset - Abstract Text
+## Journal Article Abstracts
 
 This dataset contains embeddings generated from the paper abstracts. Each vector has a
 payload with the abstract used to create it, along with the DOI (Digital Object Identifier).
