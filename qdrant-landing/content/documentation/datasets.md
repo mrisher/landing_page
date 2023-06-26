@@ -1,25 +1,21 @@
 ---
-draft: true
-id: 2
-title: Common datasets snapshots
-weight: 1
+title: Practice Datasets
+weight: 31
 ---
 
-Understanding that creating embeddings every time can be a resource-intensive task, we have 
-devised a more efficient solution for you. In this section, we will regularly publish 
-snapshots of common public datasets often used for general or educational purposes. These 
-snapshots contain pre-computed vectors, critical for semantic search, that you can easily 
-import into your Qdrant instance. Our objective is to streamline your process and accelerate 
-your progress. Say goodbye to redundant operations and harness the power of Qdrant with 
-a simple [snapshot import](/documentation/concepts/snapshots/).
+# Common Datasets in Snapshot Format
 
-# Datasets
+You may find that creating embeddings from datasets is a very resource-intensive task. 
+If you need a practice dataset, feel free to pick one of the ready-made snapshots on this page.
+These snapshots contain pre-computed vectors that you can easily import into your Qdrant instance.
 
-## Arxiv.org
+Once you download a snapshot, you need to restore it using the Qdrant CLI upon startup. 
 
-[Arxiv.org](https://arxiv.org), often simply referred to as arXiv, is a highly-regarded, 
-open-access repository of electronic preprints in multiple fields. Operated by Cornell 
-University, arXiv allows researchers to share their findings with the scientific community 
+> **Note:** Qdrant documentation describes the process of [recovering a snapshot](/documentation/concepts/snapshots/#restore-snapshot) from a .tar archive.
+
+## Arxiv Datasets
+
+Our snapshots are generated from publicly available datasets, which are often used for commercial or academic purposes. [Arxiv.org](https://arxiv.org) is a highly-regarded open-access repository of electronic preprints in multiple fields. Operated by Cornell University, arXiv allows researchers to share their findings with the scientific community 
 and receive feedback before they undergo peer review for formal publication. Its archives 
 host millions of scholarly articles, making it an invaluable resource for those looking 
 to explore the cutting edge of scientific research. With a high frequency of daily 
@@ -29,7 +25,8 @@ that is ripe for mining, analysis, and the development of future innovations.
 Arxiv.org snapshots were created using precomputed embeddings exposed by
 [the Alexandria Index](https://alex.macrocosm.so/download).
 
-### Only titles
+
+## Datasets - Article Titles 
 
 This dataset contains embeddings generated from the paper titles only. Each vector has a
 payload with the title used to create it, along with the DOI (Digital Object Identifier).
@@ -40,8 +37,6 @@ payload with the title used to create it, along with the DOI (Digital Object Ide
     "DOI": "1612.05191"
 }
 ```
-
-#### Snapshots
 
 <table>
    <thead>
@@ -68,7 +63,7 @@ payload with the title used to create it, along with the DOI (Digital Object Ide
    </tbody>
 </table>
 
-### Only abstracts
+## Dataset - Abstract Text
 
 This dataset contains embeddings generated from the paper abstracts. Each vector has a
 payload with the abstract used to create it, along with the DOI (Digital Object Identifier).
@@ -104,7 +99,4 @@ payload with the abstract used to create it, along with the DOI (Digital Object 
    </tbody>
 </table>
 
-# Importing the snapshot
 
-Qdrant documentation describes the process of [recovering a snapshot](/documentation/concepts/snapshots/#restore-snapshot)
-from a .tar archive.
