@@ -11,7 +11,7 @@ These snapshots contain pre-computed vectors that you can easily import into you
 
 Once you download a snapshot, you need to restore it using the Qdrant CLI upon startup. 
 
-> **Note:** Qdrant documentation describes the process of [recovering a snapshot](/documentation/concepts/snapshots/#restore-snapshot) from a .tar archive.
+**Tutorials:** You may either [**restore a dataset from a snapshot**](/documentation/concepts/snapshots/#restore-snapshot) or [**create a snapshot from a dataset**](/documentation/tutorials/create-snapshot/).
 
 ## Arxiv.org Sample Text Data
 
@@ -37,31 +37,10 @@ payload with the title used to create it, along with the DOI (Digital Object Ide
     "DOI": "1612.05191"
 }
 ```
+|Models|Dimensionality|Documents|Size|Link|
+|-|-|-|-|-|
+|[InstructorXL](https://huggingface.co/hkunlp/instructor-xl)|768|2.3M|7.1 GB|[DOWNLOAD LINK](https://storage.googleapis.com/common-datasets-snapshots/arxiv_titles-3083016565637815127-2023-05-29-13-56-22.snapshot)|
 
-<table>
-   <thead>
-      <tr>
-         <th>Model</th>
-         <th>Dimensionality</th>
-         <th>Documents</th>
-         <th>Size</th>
-         <th>Link</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><a href="https://huggingface.co/hkunlp/instructor-xl">InstructorXL</a></td>
-         <td>768</td>
-         <td>2.3M</td>
-         <td>7.1 GB</td>
-         <td>
-            <a href="https://storage.googleapis.com/common-datasets-snapshots/arxiv_titles-3083016565637815127-2023-05-29-13-56-22.snapshot">
-                <img src="/images/icons/download.svg" alt="download" />
-            </a>
-         </td>
-      </tr>
-   </tbody>
-</table>
 
 ## Journal Article Abstracts
 
@@ -74,29 +53,9 @@ payload with the abstract used to create it, along with the DOI (Digital Object 
     "DOI": "1612.05191"
 }
 ```
-<table>
-   <thead>
-      <tr>
-         <th>Model</th>
-         <th>Dimensionality</th>
-         <th>Documents</th>
-         <th>Size</th>
-         <th>Link</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><a href="https://huggingface.co/hkunlp/instructor-xl">InstructorXL</a></td>
-         <td>768</td>
-         <td>2.3M</td>
-         <td>8.4 GB</td>
-         <td>
-            <a href="https://storage.googleapis.com/common-datasets-snapshots/arxiv_abstracts-3083016565637815127-2023-06-02-07-26-29.snapshot">
-                <img src="/images/icons/download.svg" alt="download" />
-            </a>
-         </td>
-      </tr>
-   </tbody>
-</table>
+|Models|Dimensionality|Documents|Size|Link|
+|-|-|-|-|-|
+|[InstructorXL](https://huggingface.co/hkunlp/instructor-xl)|768|2.3M|8.4 GB|[DOWNLOAD LINK](https://storage.googleapis.com/common-datasets-snapshots/arxiv_abstracts-3083016565637815127-2023-06-02-07-26-29.snapshot)|
+
 
 
